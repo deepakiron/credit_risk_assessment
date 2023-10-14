@@ -30,12 +30,11 @@ is the graph of the output.
 - we can see even after reduce the dataset with different feature selection technique the accuracy on test data not verying much
 - figure 2,4 shows time taken by the model to train on different set of data. we see the after applying feature selection technique we can reduce the data size which are taking less time to traing the model.
 - figure 3 shows the size of dataset with and without applying feature selection technique, we see by applying feature selection technique we nearly reduced the size of data by half.
-
+----
 ![image](https://github.com/deepakiron/credit_risk_assessment/assets/43108478/8783ea5e-917c-405a-9794-2a4f1491ab6b)
 
-<p>
-The above diagram shows the number of features selected to train the model, initially after one-hot encoding we see the dataset has around 60 columns by using the feature selection technique it reduced by at least 50%.
-</p>
+
+- The above diagram shows the number of features selected to train the model, initially after one-hot encoding we see the dataset has around 60 columns by using the feature selection technique it reduced by at least 50%.
 <p>
 In this Project we have applied different Feature Selection Technique in german credit dataset and compare with the without feature selection algorithm with performance and time. We have currently applied mutual information or information gain technique, gain ratio and chi-square correlation to choose selective features from german credit dataset.
 We concluded that some of feature does not contribute much information to the feature so we can remove them without losing information and make the model faster.
