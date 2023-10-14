@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="account_check_status_no checking account <= 0.5\ngini = 0.421\nsamples = 750\nvalue = [524, 226]", fillcolor="#f0b78e"] ;
+1 [label="duration_in_month <= 0.11\ngini = 0.489\nsamples = 452\nvalue = [260, 192]", fillcolor="#f8decb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="purpose_(vacation - does not exist?) <= 0.5\ngini = 0.305\nsamples = 80\nvalue = [65, 15]", fillcolor="#eb9e67"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+30 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 30 ;
+33 [label="account_check_status_< 0 DM <= 0.5\ngini = 0.499\nsamples = 372\nvalue = [195, 177]", fillcolor="#fdf3ed"] ;
+1 -> 33 ;
+34 [label="(...)", fillcolor="#C0C0C0"] ;
+33 -> 34 ;
+127 [label="(...)", fillcolor="#C0C0C0"] ;
+33 -> 127 ;
+226 [label="other_installment_plans_none <= 0.5\ngini = 0.202\nsamples = 298\nvalue = [264, 34]", fillcolor="#e89152"] ;
+0 -> 226 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+227 [label="credit_amount <= 0.084\ngini = 0.403\nsamples = 50\nvalue = [36, 14]", fillcolor="#efb286"] ;
+226 -> 227 ;
+228 [label="(...)", fillcolor="#C0C0C0"] ;
+227 -> 228 ;
+229 [label="(...)", fillcolor="#C0C0C0"] ;
+227 -> 229 ;
+250 [label="age <= 0.223\ngini = 0.148\nsamples = 248\nvalue = [228, 20]", fillcolor="#e78c4a"] ;
+226 -> 250 ;
+251 [label="(...)", fillcolor="#C0C0C0"] ;
+250 -> 251 ;
+286 [label="(...)", fillcolor="#C0C0C0"] ;
+250 -> 286 ;
+}
